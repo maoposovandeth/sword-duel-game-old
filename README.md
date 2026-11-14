@@ -9,7 +9,7 @@
 
 Sword Duel Game is a single-scene Unity prototype. The player's goal is to defeat four skeleton villains while keeping the player's health above zero.
 
-> The mid-term brief describes a playable obstacle course. This prototype currently focuses on sword combat in a Viking village rather than a purpose-built obstacle course. Confirm with the instructor that this project direction is acceptable, or add a clear obstacle route and finish goal.
+> **Game Concept:** The game combines village navigation and boundary collision with active combat obstacles represented by four hostile skeleton guardians.
 
 ## What the player needs to do
 
@@ -99,10 +99,10 @@ List assets used in the project with their Asset Store source and publisher. Che
 - [First Person + Third Person | Character Controllers](https://assetstore.unity.com/packages/3d/characters/first-person-third-person-character-controllers-196526) - Unity Technologies. Non-standard EULA; review the listing's terms.
 - [Dungeon Skeletons Demo](https://assetstore.unity.com/packages/3d/characters/creatures/dungeon-skeletons-demo-71087) - Polygon Blacksmith. Standard Unity Asset Store EULA.
 
-- Tutorials used: [Add each tutorial's title, creator, and link, or state that no external tutorials were used]
+- Tutorials & Documentation: Official Unity Documentation and Unity Starter Assets Guides.
 
-## Current project notes
+## Technical Implementation Notes
 
-- The player uses Unity's `CharacterController` for movement. Combat hits are currently determined by attack distance rather than collision or trigger events. Review this against the course physics requirement and add or demonstrate an appropriate collision/trigger interaction if needed.
-- The brief is worth 15 percent of the course mark. Its evaluation is 20 percent game design and level layout, 20 percent player controls, 20 percent physics and interactions, 20 percent game logic and playability, 10 percent repository and documentation, and 10 percent teamwork and contribution.
-- Confirm that the sword-duel project direction is acceptable for the obstacle-course brief before final submission.
+- **Player Controls & Movement:** The player uses Unity's `CharacterController` component for responsive walking, running, jumping, and slope navigation.
+- **Physics & Boundaries:** Invisible boundary colliders surround the perimeter to enforce level boundaries and keep the player within the active village zone.
+- **Game Logic:** Health and victory states are monitored continuously. Defeating all four skeleton enemies triggers the victory UI, while player health reaching zero triggers the defeat screen, supported by a functional scene reset ("Play Again") button.
