@@ -1,8 +1,13 @@
 # Sword Duel Game
 
+> **🎮 Playable Windows Build:** [Download & Play (Google Drive)](https://drive.google.com/file/d/1tPINg-hVEMeK8sRvw3Z5kf_jpcvjXhwX/view?usp=sharing)  
+> **🎬 Demonstration Video:** [Watch Gameplay Demo (Google Drive)](https://drive.google.com/file/d/1qI8Q3gehVDYwa0m7eb7PhTNkTRArb87B/view?usp=sharing)
+>
+> *(Download the zip, extract it, and run `Sword Duel.exe` to play without needing Unity!)*
+
 ## Game overview
 
-Sword Duel Game is a single-scene Unity prototype. The player's goal is to defeat two skeleton villains while keeping the player's health above zero.
+Sword Duel Game is a single-scene Unity prototype. The player's goal is to defeat four skeleton villains while keeping the player's health above zero.
 
 > The mid-term brief describes a playable obstacle course. This prototype currently focuses on sword combat in a Viking village rather than a purpose-built obstacle course. Confirm with the instructor that this project direction is acceptable, or add a clear obstacle route and finish goal.
 
@@ -11,7 +16,7 @@ Sword Duel Game is a single-scene Unity prototype. The player's goal is to defea
 1. Start the game and move around the level.
 2. Approach the skeletons. They stay still until the player is within about 4.5 Unity units, then chase and attack.
 3. Attack the skeletons when they are within about 2.7 Unity units. Each player hit deals 25 damage.
-4. Defeat both skeletons to win. Each skeleton has 100 health points.
+4. Defeat all four skeletons to win. Each skeleton has 100 health points.
 5. Avoid enemy attacks. Each enemy hit deals 15 damage; the player starts with 200 health points and loses when it reaches zero.
 6. After a win or loss, choose **Play Again** to reload the level and start over.
 
@@ -29,8 +34,8 @@ Health bars show the player's and enemies' remaining health. The HUD also shows 
 
 ## Game rules
 
-- Defeat both skeleton villains to win.
-- The player starts with 200 HP; each skeleton starts with 100 HP.
+- Defeat all four skeleton villains to win.
+- The player starts with 350 HP; each of the four skeletons starts with 100 HP.
 - A player hit deals 25 damage. An enemy hit deals 15 damage.
 - Skeletons wait until the player comes within about 4.5 Unity units, then approach and attack at close range.
 - The player loses when their health reaches zero.
@@ -42,7 +47,7 @@ Unity 6.3, Editor version **6000.3.8f1**.
 
 ## Repository
 
-[GitHub repository](https://github.com/maoposovandeth/sword-duel-game)
+[GitHub repository](https://github.com/maoposovandeth/sword-duel-game-old)
 
 ## Open and play in the Unity Editor
 
@@ -50,7 +55,7 @@ Unity 6.3, Editor version **6000.3.8f1**.
 2. Open it with Unity Hub using Unity **6000.3.8f1** and allow Unity to import the assets.
 3. Open `Assets/Viking Village/Scenes/The_Viking_Village.unity`.
 4. Press **Play** in the Unity Editor.
-5. Use the controls above to fight both skeletons. Test both a victory and a defeat, then test **Play Again**.
+5. Use the controls above to fight all four skeletons. Test both a victory and a defeat, then test **Play Again**.
 
 ## Windows standalone build
 
@@ -58,7 +63,7 @@ The project is configured with `Assets/Viking Village/Scenes/The_Viking_Village.
 
 Test the generated Windows build without the Unity Editor. Include the complete build output folder (not only the `.exe`) in a ZIP archive. Upload the ZIP to Google Drive or GitHub Releases and add its accessible, non-expiring link below.
 
-**Windows build ZIP:** [Add download link before submission]
+**Windows build ZIP:** [Download Playable Windows Build (Google Drive)](https://drive.google.com/file/d/1tPINg-hVEMeK8sRvw3Z5kf_jpcvjXhwX/view?usp=sharing)
 
 ## Gameplay recording
 
@@ -66,14 +71,14 @@ Record an MP4 with all four members presenting their parts. Show:
 
 1. The game objective and controls: WASD, mouse look, Space to jump, Left Shift to sprint, and left-click to attack.
 2. The player using the sword and shield, and the boundary walls stopping the player from leaving the village.
-3. Both skeletons waiting, approaching, and attacking; show the player and enemy health bars changing.
-4. A win by defeating both skeletons, then use **Play Again**.
+3. All four skeletons waiting, approaching, and attacking; show the player and enemy health bars changing.
+4. A win by defeating all four skeletons, then use **Play Again**.
 5. A loss when the player's health reaches zero, then use **Play Again** again.
 6. The team members' contributions and the game's result.
 
 The brief also asks for purposeful obstacles and physics interactions. The current level is combat-focused; enemy damage is distance-based. Confirm that the instructor accepts the current game, or add an obstacle route and a clear collision/trigger interaction before claiming those requirements are met. Upload the recording to YouTube or Google Drive and make sure the link is accessible to the lecturer.
 
-**Gameplay video:** [Add video link before submission]
+**Gameplay video:** [Watch Demonstration Video (Google Drive)](https://drive.google.com/file/d/1qI8Q3gehVDYwa0m7eb7PhTNkTRArb87B/view?usp=sharing)
 
 ## Team members and contributions
 
@@ -81,7 +86,7 @@ The brief also asks for purposeful obstacles and physics interactions. The curre
 | --- | --- |
 | Mao Posovandeth | Set up the Viking Village scene and player; added walking, running, jumping, mouse-controlled camera movement, sword-swing animation, and player/enemy health bars. |
 | Chan Siekfong | Added invisible boundary walls to keep the player in the village, and equipped the player with a sword and shield. |
-| Nuy Bunhou | Added Villain 1 and Villain 2 and their close-range behavior: they approach and attack when the player gets near. |
+| Nuy Bunhou | Added Villain 1 and Villain 2 and their close-range behavior: they approach and attack when the player gets near. The game now includes four skeleton enemies. |
 | Kim Seyha | Added the RPG Animations Pack and player animation work; added the on-screen objective, victory/defeat messages, and the Play Again button. |
 
 ## Asset and tutorial references
