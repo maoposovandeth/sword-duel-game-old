@@ -3,7 +3,7 @@
 > **🎮 Playable Windows Build:** [Download & Play (Google Drive)](https://drive.google.com/file/d/1tPINg-hVEMeK8sRvw3Z5kf_jpcvjXhwX/view?usp=sharing)  
 > **🎬 Demonstration Video:** [Watch Gameplay Demo (Google Drive)](https://drive.google.com/file/d/1qI8Q3gehVDYwa0m7eb7PhTNkTRArb87B/view?usp=sharing)
 >
-> *(Download the zip, extract it, and run `Sword Duel.exe` to play without needing Unity!)*
+> *(Download the zip, extract it, and double-click `my team game project.exe` inside the gameplay folder to play without needing Unity!)*
 
 ## Game overview
 
@@ -57,13 +57,14 @@ Unity 6.3, Editor version **6000.3.8f1**.
 4. Press **Play** in the Unity Editor.
 5. Use the controls above to fight all four skeletons. Test both a victory and a defeat, then test **Play Again**.
 
-## Windows standalone build
+## Windows standalone build (No Unity Needed)
 
-The project is configured with `Assets/Viking Village/Scenes/The_Viking_Village.unity` in the build scene list. In Unity 6, open **File > Build Profiles**, select **Windows**, switch to that platform if needed, and build the game.
+To play the standalone game without opening the Unity Editor:
+1. Download the build ZIP from the Google Drive link below and extract it.
+2. Open the extracted **`gameplay`** folder.
+3. Double-click **`my team game project.exe`** to launch and play immediately.
 
-Test the generated Windows build without the Unity Editor. Include the complete build output folder (not only the `.exe`) in a ZIP archive. Upload the ZIP to Google Drive or GitHub Releases and add its accessible, non-expiring link below.
-
-**Windows build ZIP:** [Download Playable Windows Build (Google Drive)](https://drive.google.com/file/d/1tPINg-hVEMeK8sRvw3Z5kf_jpcvjXhwX/view?usp=sharing)
+**Windows build ZIP:** [Download Playable Windows Build (Google Drive)](https://drive.google.com/file/d/1tPINg-hVEMeK8sRvw3Z5kf_jpcvjXHwX/view?usp=sharing)
 
 ## Gameplay recording
 
