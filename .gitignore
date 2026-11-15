@@ -56,6 +56,9 @@ sysinfo.txt
 # Build folders (stored as standalone ZIP on Google Drive due to 100MB GitHub limit)
 /gameplay/
 
+# Temporary cloud upload folders
+.tmp.driveupload/
+
 # Large raw texture files exceeding GitHub's 100MB limit
 /Assets/Viking Village/Textures/Buildings/build_building_01_a.tif
 /Assets/Viking Village/Textures/Buildings/build_building_01_a.tif.meta

@@ -159,7 +159,11 @@ namespace StarterAssets
         {
             if (enemy.Object == null)
             {
-                _enemies.Remove(enemy);
+                int enemyIndex = _enemies.IndexOf(enemy);
+                if (enemyIndex >= 0)
+                {
+                    _enemies.RemoveAt(enemyIndex);
+                }
                 return;
             }
 
@@ -245,13 +249,14 @@ namespace StarterAssets
                 return false;
             }
 
-            Enemy nearestEnemy = null;
+            int nearestEnemyIndex = -1;
             float nearestDistance = PlayerAttackRange;
             Vector3 attackerPosition = attacker.position;
             attackerPosition.y = 0f;
 
-            foreach (Enemy enemy in _enemies)
+            for (int i = 0; i < _enemies.Count; i++)
             {
+                Enemy enemy = _enemies[i];
                 if (enemy.Object == null || enemy.Health <= 0f)
                 {
                     continue;
@@ -263,20 +268,22 @@ namespace StarterAssets
                 if (distance < nearestDistance)
                 {
                     nearestDistance = distance;
-                    nearestEnemy = enemy;
+                    nearestEnemyIndex = i;
                 }
             }
 
-            if (nearestEnemy == null)
+            if (nearestEnemyIndex < 0)
             {
                 return false;
             }
 
+            Enemy nearestEnemy = _enemies[nearestEnemyIndex];
             nearestEnemy.Health = Mathf.Max(0f, nearestEnemy.Health - PlayerAttackDamage);
             if (nearestEnemy.Health <= 0f)
             {
-                _enemies.Remove(nearestEnemy);
-                Destroy(nearestEnemy.Object);
+                GameObject defeatedEnemyObject = nearestEnemy.Object;
+                _enemies.RemoveAt(nearestEnemyIndex);
+                Destroy(defeatedEnemyObject);
                 _defeatedEnemies++;
                 if (_defeatedEnemies >= EnemyCount)
                 {
