@@ -64,7 +64,7 @@ To play the standalone game without opening the Unity Editor:
 2. Open the extracted **`gameplay`** folder.
 3. Double-click **`my team game project.exe`** to launch and play immediately.
 
-**Windows build ZIP:** [Download Playable Windows Build (Google Drive)](https://drive.google.com/file/d/1tPINg-hVEMeK8sRvw3Z5kf_jpcvjXHwX/view?usp=sharing)
+**Windows build ZIP:** [Download Playable Windows Build (Google Drive)](https://drive.google.com/file/d/1tPINg-hVEMeK8sRvw3Z5kf_jpcvjXhwX/view?usp=sharing)
 
 ## Gameplay recording
 
